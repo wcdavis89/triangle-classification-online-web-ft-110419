@@ -22,7 +22,9 @@ class Triangle
     end
   end
   
-  def 
+  def valid?
+    
+    
   
   class TriangleError < StanardError
   end 
