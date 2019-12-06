@@ -27,7 +27,10 @@ class Triangle
       return true 
       elsif side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2
       return true 
-    elsif 
+    elsif (sides.each {|side| side.positive?})
+      return true
+  else
+    raise TriangleError
     end
   end
     
