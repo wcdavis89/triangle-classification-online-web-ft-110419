@@ -23,10 +23,11 @@ class Triangle
   end
   
   def valid?
-    if (sides.each {|side| side == 0})
-      raise TriangleError
-      elsif side1 + side2 <side3 && side2 + side3 <side1 && side1 + side3 <side2
-      raise TriangleError
+    if (sides.each {|side| side > 0})
+      return true 
+      elsif side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2
+      return true 
+    elsif 
     end
   end
     
