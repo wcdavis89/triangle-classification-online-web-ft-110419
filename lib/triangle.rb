@@ -38,7 +38,7 @@ class Triangle
   end
 
     def valid?
-      if 
+      if valid1 == true && valid2 == true && valid3 == true
     
   
   class TriangleError < StandardError
