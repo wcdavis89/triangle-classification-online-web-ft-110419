@@ -23,7 +23,7 @@ class Triangle
   end
   
   def valid?
-    
+    if sides
     
   
   class TriangleError < StanardError
