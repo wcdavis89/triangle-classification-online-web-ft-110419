@@ -21,4 +21,9 @@ class Triangle
       :isosceles
     end
   end
+  
+  def 
+  
+  class TriangleError < StanardError
+  end 
 end
