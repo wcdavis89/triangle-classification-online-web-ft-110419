@@ -22,18 +22,23 @@ class Triangle
     end
   end
   
-  def valid?
-    if (sides.each {|side| side > 0})
+  def valid1
+    sides.each {|side| side > 0}
       return true 
-      elsif side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2
-      return true 
-    elsif (sides.each {|side| side.positive?})
-      return true
-  else
-    raise TriangleError
-    end
   end
-    
+  
+  def valid2
+    side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2
+      return true
+  end
+  
+  def valid3 
+    sides.each {|side| side.positive?}
+      return true
+  end
+
+    def valid?
+      if 
     
   
   class TriangleError < StandardError
