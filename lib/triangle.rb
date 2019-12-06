@@ -12,12 +12,7 @@ class Triangle
     @@sides << side3
   end
   
-  def self.sides 
-    @@sides 
-  end
-  
-  
-  def valid?
-    sides.each {|side| }
-    
+  def kind
+    if side1 == side2, side2 == side3, side3 ==side1
+      
 end
