@@ -23,7 +23,9 @@ class Triangle
   end
   
   def valid?
-    if sides
+    if sides.each {|side| side == 0
+      raise TriangleError
+    }
     
   
   class TriangleError < StanardError
