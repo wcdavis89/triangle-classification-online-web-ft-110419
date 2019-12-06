@@ -23,8 +23,9 @@ class Triangle
   end
   
   def valid?
-    if (sides.each {|side| side == 0
+    if (sides.each {|side| side == 0})
       raise TriangleError
+      elsif 
     }
     
   
