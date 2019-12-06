@@ -13,8 +13,11 @@ class Triangle
   end
   
   def kind
-    
-     valid?
+    if valid1 == true && valid2 == true 
+      puts true 
+    else 
+      raise TriangleError 
+    end
     if side1 == side2 && side2 == side3 
       :equilateral
     elsif side1 != side2 && side2 != side3 && side3 !=side1
