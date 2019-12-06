@@ -24,17 +24,17 @@ class Triangle
   
   def valid1
     sides.each {|side| side > 0}
-      return true 
+       
   end
   
   def valid2
     side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2
-      return true
+      
   end
   
   def valid3 
     sides.each {|side| side.positive?}
-      return true
+     
   end
 
     def valid?
